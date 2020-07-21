@@ -17,14 +17,14 @@ https:\/\/.*\/getGlobalData url script-response-body https://raw.githubuserconte
 #皮皮虾 去广告去水印
 ^https?://.*\.snssdk\.com/bds/(feed/stream|comment/cell_reply|cell/cell_comment|cell/detail|ward/list|user/favorite|user/cell_coment|user/cell_userfeed|user/publish_list) url script-response-body https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/Super.js
 # 哔哩哔哩动画 精简去广告 (By @Kaya)
-;^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Bilibili.js
+^https:\/\/app\.bilibili\.com\/(search\/resource|x\/(resource\/show\/tab|v2\/(view|rank|feed|reply\/main|account\/mine))) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Bilibili.js
 # 解锁B站大会员-圈X规则
-;https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22333/geturl/
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22333/geturl/
 ;https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:22333/season/
 #哔哩哔哩个人排行榜
-;^https:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili_space_qx.js
+^https:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili_space_qx.js
 #哔哩哔哩番剧解锁
-;^https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili_season_qx.js
+^https:\/\/api\.bilibili\.com\/pgc\/view\/app\/season url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili_season_qx.js
 ;^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bilibili_playurl_qx.js
 
 # 驾校一点通 (by @superuv)
@@ -69,7 +69,7 @@ https?:\/\/api\.jiaonizuocai\.com url script-response-body https://raw.githubuse
 ##以下为仅QX1.05+(TF188+)可用
 
 # 动画疯 去广告(by NobyDa)
-;https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
+https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 ;https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js
 
 #京东历史比价 (by yichahucha)
