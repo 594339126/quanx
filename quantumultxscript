@@ -1,12 +1,6 @@
 
 hostname = *.googlevideo.com, trade-acs.m.taobao.com, api.gamer.com
 
-
-# > 小小影视 Qx版
-# 会员
-# 去广告
-https:\/\/.*\/getGlobalData url script-response-body https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/xxysad.js
-
 # 用药助手解锁专业版 (By Primovist)
 ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js
 
@@ -31,32 +25,9 @@ http:\/\/miaow\.yiyongcad\.com\/api\/v4\/memprofile url script-response-body htt
 #联通营业厅 去轮播广告 (By Wangsc1)
 ^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js
 
-# YouTube去广告
-^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
-^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
-^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
-^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
 
 #菜谱大全解锁vip (By @photonmang)
 https?:\/\/api\.jiaonizuocai\.com url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cpdq.js
-
-# 小睡眠（by 黑黑酱）
-^https:\/\/api\.psy-1\.com\/cosleep\/user\/info url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/xiaoshuimian.js
-
-#蜗牛睡眠会员（by黑黑酱）
-^https:\/\/snailsleep\.net\/snail\/v1\/profile\/get url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/wnsm.js
-
-# 可可英语会员
-^https:\/\/mob2015\.kekenet\.com\/keke\/mobile\/index\.php url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/kkyy.js
-
-# 飒漫画 (By @u18888)
-^https:\/\/m\.samh\.xndm\.tech\/userapi\/info\/v1\/getuserinfo url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/Smh.js
 
 ##以下为仅QX1.05+(TF188+)可用
 
